@@ -46,6 +46,7 @@ main {
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s; 
+	
 }
 
 .nav-wrapper menu ul li a {
@@ -61,6 +62,7 @@ main {
 	position:relative;
 	text-decoration: none;
 	text-transform: lowercase; 
+	
 }
 
 .logo-img {
@@ -85,8 +87,8 @@ main {
      z-index:999;
 }
 
-
-.active_link { background: rgba(10, 113, 209, .1); color: #0a71d1 !important; pointer-events: none }
+.active_link { background: rgba(10, 113, 209, .1); color: #0a71d1 !important; pointer-events: none;
+}
 
  @media (min-width:993px){	
 
@@ -161,13 +163,123 @@ main {
 	justify-content: center;
 	flex-wrap: wrap;
 	display:inline-block;
-	
   }
  
+ /*Sidenav Responsive*/
+ 
+ @media (min-width:320px)and (max-width:479px){
+   
+.sidenav{
+     width:80%;
+     height:100%;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-top:4px solid var:red;
+     overflow-y:scroll;
+	 background:#00695c;
+     z-index:999;
+}
+
+  #nav-mobile li a, span{
+	 width:95%;
+	 color:white;
+	 height:auto;
+	 justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top:15px;
+  }
+ 
+ span{
+   color:orange;
+ }
+
+}
+ 
+ 
+@media (min-width:480px)and (max-width:690px){	
+ 
+.sidenav{
+     width:75%;
+     height:100%;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-top:4px solid var:red;
+     overflow-y:scroll;
+	 background:#00695c;
+     z-index:999;
+}
+
+  #nav-mobile li a, span{
+	 width:95%;
+	 color:white;
+	 height:auto;
+	 justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top:15px;
+  }
+ 
+ span{
+   color:orange;
+ }
+}
+ 
+
+@media (min-width:691px)and (max-width:992px){	
+ 
+.sidenav{
+     width:75%;
+     height:100%;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-top:4px solid var:red;
+     overflow-y:scroll;
+	 background:#00695c;
+     z-index:999;
+}
+
+  #nav-mobile li a, span{
+	 width:95%;
+	 color:white;
+	 height:auto;
+	 justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top:15px;
+  }
+ 
+ span{
+   color:orange;
+ }
+}
+ 
+ 
+  
+ @media (min-width:320px)and (max-width:992px){
+	 
+.radioco-information{
+	width:98%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; 
+	color:yellow; 
+	font-size:16px;
+    margin-bottom:30px;	
+	position:absolute;
+	}
+}
+ 
+/*Contenido*/ 
  
 #contenido {
   width:99.5%;
-  height:;
+  height:100%;
   display:hidden;
   margin-top:0px;
   margin-left:4px;
@@ -190,7 +302,7 @@ main {
 
 article .elemento {
   width:99.5%;
-  height:;
+  height:100%;
   display:hidden;
   margin-top:2px;
   margin-left:4px;
@@ -262,7 +374,8 @@ article .elemento {
         justify-content: center;
         flex-wrap: wrap;
 		margin:0 auto;
-        color:black;
+        color:orange;
+		
         font-size:23px;
 	}
     
@@ -351,7 +464,6 @@ color:lime;
   height:80px;
   background-color: transparent;
   display: flex;
- 
   flex-direction: row;
   align-items: center;
 }
@@ -371,10 +483,10 @@ color:lime;
   padding-top:25px;
   margin: 0 auto;
   z-index: 2;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-    background-repeat: no-repeat!important;
-    background-position: center;
-    background-size: 16px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+  background-repeat: no-repeat!important;
+  background-position: center;
+  background-size: 16px;
   background-repeat:no-repeat;
   background-position:center;
   background-size:20px;
@@ -514,14 +626,16 @@ img:hover {
 /* Margin for videos */
 
 .flexbox-video{
-   width:94%;
+   width:90%;
 	height:auto;
 	text-align: center;
 	margin-top:5px;
 	margin: 0 auto;
-	margin-bottom:30px;
+	margin-bottom:10px;
 	display: flex; 
-	background:#272727;
+	background:black;
+	align-items:flex-start;
+	flex-direction:column;
 }
 
 .video .center{
@@ -534,7 +648,8 @@ img:hover {
 }
 
  .flexbox-video > div {
-	width: 98%;
+	width:90%;
+	height:auto;
 	padding: 10px;
 	background-color: #272727;
 	margin: 0 auto;
@@ -547,9 +662,11 @@ img:hover {
     overflow: hidden;
 	display: flex; 
     width: 100%;
-	height:340px;
+	height:400px;
     margin-top:0px;
 	margin-bottom:5px;
+	justify-content: center;
+	flex-wrap: wrap;
 	margin:0 auto;
 }
 
@@ -561,10 +678,12 @@ img:hover {
 
 .youtube-player {
     position: relative;
-    overflow: hidden;
-    width: 100%;
-	height:320px;
+	justify-content: center;
+	flex-wrap: wrap;
+    width:95%;
+	height:400px;
     margin-top:0px;
+	margin:0 auto;
 	margin-bottom:5px;
 }
 
@@ -647,46 +766,51 @@ img:hover {
 
 @media screen and (min-width:961px) and (max-width: 1023px) {
 
-.flexbox-video{
-   width:97%;
-	height:auto;
-	text-align: center;
-	margin-top:15px;
-	margin: 0 auto;
-	margin-bottom:25px;
-	display: flex; 
+.flexbox-video {
+	width:98%;
+	height:100%;
+	justify-content: center;
+	flex-wrap: wrap;
 	background:url(../imagenes/imag.jpg);
-  }
-  
- .flexbox-video > div {
-	width: 98%;
-	padding: 10px;
-	background-color:black;
- }
-
-.postcast{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-	height:340px;
-    margin-top:0px;
-	margin-bottom:5px;
+	margin-bottom:20px;
+	display: flex;
+    height:auto;
+    align-items:flex-start;
+	flex-direction:column;
+	margin:0 auto;
 }
 
 #sc-widget{
-  width: 95%;
+  width: 90%;
   height:95%;
   margin-bottom:10px;
 }
 
-.youtube-player {
+.youtube-player iframe {
     position: relative;
-    overflow: hidden;
-    width: 100%;
-	height:370px;
-    margin-top:0px;
-	margin-bottom:5px;
-  }
+    top: 0;
+    width: 90%;
+    height: 100%;
+    z-index: 100;
+    background: transparent; 
+	margin:0 auto;
+}
+
+.video .center{
+  text-align:center;
+  padding-top:15px;
+  padding-bottom:25px;
+  font-size:25px;
+  color:white;
+  margin:0 auto;
+}
+
+.flexbox-video > div {
+	width: 95%;
+	padding: 10px;
+	margin:0 auto;
+	margin-bottom:20px;
+ }
 }
 
 
@@ -836,12 +960,4 @@ img:hover {
 }
 
 
-@media (min-width:320px)and (max-width:992px){
-   #nav-mobile li a{
-	 color:white;
-  }
- 
- span{
-   color:orange;
- }
-}
+
